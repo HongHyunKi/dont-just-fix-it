@@ -1,4 +1,4 @@
-# 기술 칩 아이콘을 HTML에서 분리해 모바일 LCP 개선 (`dev-portfolio`)
+# 기술 칩 아이콘을 HTML에서 분리해 모바일 LCP 개선 (`개인 portfolio 프로젝트`)
 
 - **Skills & Libraries**: Next.js 16.3.4, React Server Components, CSS Masking, Lighthouse 13.5.0, Playwright
 - **작업 일자**: 2026.10.01
@@ -51,4 +51,4 @@
 
 단계별 6회 측정의 점수·지표·전송량·측정 설정은 [measurements.json](../evidence/tech-icon-html-weight.json)에 남겼습니다.
 
-이 문서는 dev-portfolio에서 작성한 기존 사례를 공개 예제로 옮긴 것입니다. 이번 스킬 배포 과정에서 새로 측정한 결과가 아닙니다.
+이 문서는 개인 portfolio에서 작성한 기존 사례를 공개 예제로 옮긴 것입니다. 이번 스킬 배포 과정에서 새로 측정한 결과가 아닙니다.
