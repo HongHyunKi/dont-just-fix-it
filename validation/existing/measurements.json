@@ -1,0 +1,1028 @@
+{
+  "measurement": "Local production home, sequential cumulative experiments; 3 runs per stage",
+  "stages": {
+    "baseline": {
+      "runs": [
+        {
+          "file": "reports/lighthouse/mobile-performance/baseline-1.json",
+          "date": "2026-09-30T10:20:32.868Z",
+          "scores": {
+            "performance": 75,
+            "accessibility": 96,
+            "best-practices": 96,
+            "seo": 100,
+            "agentic-browsing": 100
+          },
+          "metrics": {
+            "first-contentful-paint": 1205.9345,
+            "largest-contentful-paint": 7148.754375,
+            "total-blocking-time": 78.5,
+            "cumulative-layout-shift": 0,
+            "speed-index": 3160.0052682893884
+          },
+          "transferBytes": {
+            "Font": 501012,
+            "Script": 445115,
+            "Image": 35331
+          },
+          "warnings": []
+        },
+        {
+          "file": "reports/lighthouse/mobile-performance/baseline-2.json",
+          "date": "2026-09-30T10:20:44.442Z",
+          "scores": {
+            "performance": 65,
+            "accessibility": 96,
+            "best-practices": 96,
+            "seo": 100,
+            "agentic-browsing": 100
+          },
+          "metrics": {
+            "first-contentful-paint": 4059.9035000000003,
+            "largest-contentful-paint": 8144.8842,
+            "total-blocking-time": 95,
+            "cumulative-layout-shift": 0,
+            "speed-index": 4059.9035000000003
+          },
+          "transferBytes": {
+            "Font": 501012,
+            "Script": 445115,
+            "Image": 35331
+          },
+          "warnings": []
+        },
+        {
+          "file": "reports/lighthouse/mobile-performance/baseline-3.json",
+          "date": "2026-09-30T10:20:56.078Z",
+          "scores": {
+            "performance": 65,
+            "accessibility": 96,
+            "best-practices": 96,
+            "seo": 100,
+            "agentic-browsing": 100
+          },
+          "metrics": {
+            "first-contentful-paint": 4063.04075,
+            "largest-contentful-paint": 7973.6489,
+            "total-blocking-time": 82.5,
+            "cumulative-layout-shift": 0,
+            "speed-index": 4063.04075
+          },
+          "transferBytes": {
+            "Font": 501012,
+            "Script": 445115,
+            "Image": 35331
+          },
+          "warnings": []
+        }
+      ],
+      "median": {
+        "score": 65,
+        "metrics": {
+          "first-contentful-paint": 4059.9035000000003,
+          "largest-contentful-paint": 7973.6489,
+          "total-blocking-time": 82.5,
+          "cumulative-layout-shift": 0,
+          "speed-index": 4059.9035000000003
+        },
+        "transferBytes": {
+          "Font": 501012,
+          "Script": 445115,
+          "Image": 35331
+        }
+      }
+    },
+    "text": {
+      "runs": [
+        {
+          "file": "reports/lighthouse/mobile-performance/text-1.json",
+          "date": "2026-09-30T10:22:01.101Z",
+          "scores": {
+            "performance": 90,
+            "accessibility": 96,
+            "best-practices": 96,
+            "seo": 100,
+            "agentic-browsing": 100
+          },
+          "metrics": {
+            "first-contentful-paint": 1205.7095,
+            "largest-contentful-paint": 3539.56425,
+            "total-blocking-time": 56.000000000000455,
+            "cumulative-layout-shift": 0,
+            "speed-index": 3158.402257326701
+          },
+          "transferBytes": {
+            "Font": 501012,
+            "Script": 445128,
+            "Image": 35331
+          },
+          "warnings": []
+        },
+        {
+          "file": "reports/lighthouse/mobile-performance/text-2.json",
+          "date": "2026-09-30T10:22:12.834Z",
+          "scores": {
+            "performance": 68,
+            "accessibility": 96,
+            "best-practices": 96,
+            "seo": 100,
+            "agentic-browsing": 100
+          },
+          "metrics": {
+            "first-contentful-paint": 3910.18075,
+            "largest-contentful-paint": 6239.253049999999,
+            "total-blocking-time": 67,
+            "cumulative-layout-shift": 0,
+            "speed-index": 3910.18075
+          },
+          "transferBytes": {
+            "Font": 501012,
+            "Script": 445128,
+            "Image": 35331
+          },
+          "warnings": []
+        },
+        {
+          "file": "reports/lighthouse/mobile-performance/text-3.json",
+          "date": "2026-09-30T10:22:24.340Z",
+          "scores": {
+            "performance": 68,
+            "accessibility": 96,
+            "best-practices": 96,
+            "seo": 100,
+            "agentic-browsing": 100
+          },
+          "metrics": {
+            "first-contentful-paint": 3909.51375,
+            "largest-contentful-paint": 6163.3192500000005,
+            "total-blocking-time": 69.5,
+            "cumulative-layout-shift": 0,
+            "speed-index": 3909.51375
+          },
+          "transferBytes": {
+            "Font": 501012,
+            "Script": 445128,
+            "Image": 35331
+          },
+          "warnings": []
+        }
+      ],
+      "median": {
+        "score": 68,
+        "metrics": {
+          "first-contentful-paint": 3909.51375,
+          "largest-contentful-paint": 6163.3192500000005,
+          "total-blocking-time": 67,
+          "cumulative-layout-shift": 0,
+          "speed-index": 3909.51375
+        },
+        "transferBytes": {
+          "Font": 501012,
+          "Script": 445128,
+          "Image": 35331
+        }
+      }
+    },
+    "font": {
+      "runs": [
+        {
+          "file": "reports/lighthouse/mobile-performance/font-1.json",
+          "date": "2026-09-30T10:23:46.981Z",
+          "scores": {
+            "performance": 91,
+            "accessibility": 96,
+            "best-practices": 96,
+            "seo": 100,
+            "agentic-browsing": 100
+          },
+          "metrics": {
+            "first-contentful-paint": 1205.7504,
+            "largest-contentful-paint": 3259.7504,
+            "total-blocking-time": 133,
+            "cumulative-layout-shift": 0,
+            "speed-index": 2719.9085435410225
+          },
+          "transferBytes": {
+            "Font": 501012,
+            "Script": 445134,
+            "Image": 35331
+          },
+          "warnings": []
+        },
+        {
+          "file": "reports/lighthouse/mobile-performance/font-2.json",
+          "date": "2026-09-30T10:23:58.634Z",
+          "scores": {
+            "performance": 67,
+            "accessibility": 96,
+            "best-practices": 96,
+            "seo": 100,
+            "agentic-browsing": 100
+          },
+          "metrics": {
+            "first-contentful-paint": 4209.672,
+            "largest-contentful-paint": 6235.6392000000005,
+            "total-blocking-time": 77,
+            "cumulative-layout-shift": 0,
+            "speed-index": 4209.672
+          },
+          "transferBytes": {
+            "Font": 501012,
+            "Script": 445134,
+            "Image": 35331
+          },
+          "warnings": []
+        },
+        {
+          "file": "reports/lighthouse/mobile-performance/font-3.json",
+          "date": "2026-09-30T10:24:10.203Z",
+          "scores": {
+            "performance": 67,
+            "accessibility": 96,
+            "best-practices": 96,
+            "seo": 100,
+            "agentic-browsing": 100
+          },
+          "metrics": {
+            "first-contentful-paint": 4209.027,
+            "largest-contentful-paint": 6162.6378,
+            "total-blocking-time": 23,
+            "cumulative-layout-shift": 0,
+            "speed-index": 4209.027
+          },
+          "transferBytes": {
+            "Font": 501012,
+            "Script": 445134,
+            "Image": 35331
+          },
+          "warnings": []
+        }
+      ],
+      "median": {
+        "score": 67,
+        "metrics": {
+          "first-contentful-paint": 4209.027,
+          "largest-contentful-paint": 6162.6378,
+          "total-blocking-time": 77,
+          "cumulative-layout-shift": 0,
+          "speed-index": 4209.027
+        },
+        "transferBytes": {
+          "Font": 501012,
+          "Script": 445134,
+          "Image": 35331
+        }
+      }
+    },
+    "modal": {
+      "runs": [
+        {
+          "file": "reports/lighthouse/mobile-performance/modal-1.json",
+          "date": "2026-09-30T10:25:37.994Z",
+          "scores": {
+            "performance": 93,
+            "accessibility": 96,
+            "best-practices": 96,
+            "seo": 100,
+            "agentic-browsing": 100
+          },
+          "metrics": {
+            "first-contentful-paint": 1205.2064,
+            "largest-contentful-paint": 3085.2064,
+            "total-blocking-time": 54,
+            "cumulative-layout-shift": 0,
+            "speed-index": 3028.2028855819867
+          },
+          "transferBytes": {
+            "Font": 501012,
+            "Script": 419754,
+            "Image": 35331
+          },
+          "warnings": []
+        },
+        {
+          "file": "reports/lighthouse/mobile-performance/modal-2.json",
+          "date": "2026-09-30T10:25:49.580Z",
+          "scores": {
+            "performance": 67,
+            "accessibility": 96,
+            "best-practices": 96,
+            "seo": 100,
+            "agentic-browsing": 100
+          },
+          "metrics": {
+            "first-contentful-paint": 4207.77275,
+            "largest-contentful-paint": 6157.772749999998,
+            "total-blocking-time": 70,
+            "cumulative-layout-shift": 0,
+            "speed-index": 4207.77275
+          },
+          "transferBytes": {
+            "Font": 501012,
+            "Script": 419754,
+            "Image": 35331
+          },
+          "warnings": []
+        },
+        {
+          "file": "reports/lighthouse/mobile-performance/modal-3.json",
+          "date": "2026-09-30T10:26:01.075Z",
+          "scores": {
+            "performance": 67,
+            "accessibility": 96,
+            "best-practices": 96,
+            "seo": 100,
+            "agentic-browsing": 100
+          },
+          "metrics": {
+            "first-contentful-paint": 4208.95025,
+            "largest-contentful-paint": 6158.950249999998,
+            "total-blocking-time": 73.5,
+            "cumulative-layout-shift": 0,
+            "speed-index": 4208.95025
+          },
+          "transferBytes": {
+            "Font": 501012,
+            "Script": 419754,
+            "Image": 35331
+          },
+          "warnings": []
+        }
+      ],
+      "median": {
+        "score": 67,
+        "metrics": {
+          "first-contentful-paint": 4207.77275,
+          "largest-contentful-paint": 6157.772749999998,
+          "total-blocking-time": 70,
+          "cumulative-layout-shift": 0,
+          "speed-index": 4207.77275
+        },
+        "transferBytes": {
+          "Font": 501012,
+          "Script": 419754,
+          "Image": 35331
+        }
+      }
+    },
+    "subset": {
+      "runs": [
+        {
+          "file": "reports/lighthouse/mobile-performance/subset-1.json",
+          "date": "2026-09-30T10:27:41.506Z",
+          "scores": {
+            "performance": 91,
+            "accessibility": 96,
+            "best-practices": 96,
+            "seo": 100,
+            "agentic-browsing": 100
+          },
+          "metrics": {
+            "first-contentful-paint": 1356.0039,
+            "largest-contentful-paint": 3263.0058499999996,
+            "total-blocking-time": 79.5,
+            "cumulative-layout-shift": 0,
+            "speed-index": 3284.4805912615043
+          },
+          "transferBytes": {
+            "Font": 531684,
+            "Script": 419888,
+            "Image": 35331
+          },
+          "warnings": []
+        },
+        {
+          "file": "reports/lighthouse/mobile-performance/subset-2.json",
+          "date": "2026-09-30T10:27:53.067Z",
+          "scores": {
+            "performance": 67,
+            "accessibility": 96,
+            "best-practices": 96,
+            "seo": 100,
+            "agentic-browsing": 100
+          },
+          "metrics": {
+            "first-contentful-paint": 4207.186000000001,
+            "largest-contentful-paint": 6383.623200000002,
+            "total-blocking-time": 79.5,
+            "cumulative-layout-shift": 0,
+            "speed-index": 4207.186000000001
+          },
+          "transferBytes": {
+            "Font": 531684,
+            "Script": 419888,
+            "Image": 35331
+          },
+          "warnings": []
+        },
+        {
+          "file": "reports/lighthouse/mobile-performance/subset-3.json",
+          "date": "2026-09-30T10:28:04.624Z",
+          "scores": {
+            "performance": 67,
+            "accessibility": 96,
+            "best-practices": 96,
+            "seo": 100,
+            "agentic-browsing": 100
+          },
+          "metrics": {
+            "first-contentful-paint": 4209.661999999999,
+            "largest-contentful-paint": 6388.5268,
+            "total-blocking-time": 81.5,
+            "cumulative-layout-shift": 0,
+            "speed-index": 4209.661999999999
+          },
+          "transferBytes": {
+            "Font": 531684,
+            "Script": 419888,
+            "Image": 35331
+          },
+          "warnings": []
+        }
+      ],
+      "median": {
+        "score": 67,
+        "metrics": {
+          "first-contentful-paint": 4207.186000000001,
+          "largest-contentful-paint": 6383.623200000002,
+          "total-blocking-time": 79.5,
+          "cumulative-layout-shift": 0,
+          "speed-index": 4207.186000000001
+        },
+        "transferBytes": {
+          "Font": 531684,
+          "Script": 419888,
+          "Image": 35331
+        }
+      }
+    },
+    "no-webgl": {
+      "runs": [
+        {
+          "file": "reports/lighthouse/mobile-performance/no-webgl-1.json",
+          "date": "2026-09-30T10:29:47.029Z",
+          "scores": {
+            "performance": 94,
+            "accessibility": 96,
+            "best-practices": 96,
+            "seo": 100,
+            "agentic-browsing": 100
+          },
+          "metrics": {
+            "first-contentful-paint": 1206.779,
+            "largest-contentful-paint": 3111.7790000000005,
+            "total-blocking-time": 53.8052500000008,
+            "cumulative-layout-shift": 0,
+            "speed-index": 2023.85645448816
+          },
+          "transferBytes": {
+            "Font": 501012,
+            "Script": 276564,
+            "Image": 35331
+          },
+          "warnings": []
+        },
+        {
+          "file": "reports/lighthouse/mobile-performance/no-webgl-2.json",
+          "date": "2026-09-30T10:29:58.357Z",
+          "scores": {
+            "performance": 67,
+            "accessibility": 96,
+            "best-practices": 96,
+            "seo": 100,
+            "agentic-browsing": 100
+          },
+          "metrics": {
+            "first-contentful-paint": 4208.84075,
+            "largest-contentful-paint": 6158.840749999999,
+            "total-blocking-time": 56,
+            "cumulative-layout-shift": 0,
+            "speed-index": 4208.84075
+          },
+          "transferBytes": {
+            "Font": 501012,
+            "Script": 276564,
+            "Image": 35331
+          },
+          "warnings": []
+        },
+        {
+          "file": "reports/lighthouse/mobile-performance/no-webgl-3.json",
+          "date": "2026-09-30T10:30:09.613Z",
+          "scores": {
+            "performance": 67,
+            "accessibility": 96,
+            "best-practices": 96,
+            "seo": 100,
+            "agentic-browsing": 100
+          },
+          "metrics": {
+            "first-contentful-paint": 4208.671,
+            "largest-contentful-paint": 6158.670999999999,
+            "total-blocking-time": 56,
+            "cumulative-layout-shift": 0,
+            "speed-index": 4208.671
+          },
+          "transferBytes": {
+            "Font": 501012,
+            "Script": 276564,
+            "Image": 35331
+          },
+          "warnings": []
+        }
+      ],
+      "median": {
+        "score": 67,
+        "metrics": {
+          "first-contentful-paint": 4208.671,
+          "largest-contentful-paint": 6158.670999999999,
+          "total-blocking-time": 56,
+          "cumulative-layout-shift": 0,
+          "speed-index": 4208.671
+        },
+        "transferBytes": {
+          "Font": 501012,
+          "Script": 276564,
+          "Image": 35331
+        }
+      }
+    },
+    "home-font": {
+      "runs": [
+        {
+          "file": "reports/lighthouse/mobile-performance/home-font-1.json",
+          "date": "2026-09-30T10:33:15.718Z",
+          "scores": {
+            "performance": 89,
+            "accessibility": 96,
+            "best-practices": 96,
+            "seo": 100,
+            "agentic-browsing": 100
+          },
+          "metrics": {
+            "first-contentful-paint": 1357.5116,
+            "largest-contentful-paint": 3607.5116,
+            "total-blocking-time": 80.5,
+            "cumulative-layout-shift": 0,
+            "speed-index": 2528.666083469511
+          },
+          "transferBytes": {
+            "Font": 297677,
+            "Script": 419857,
+            "Image": 35331
+          },
+          "warnings": []
+        },
+        {
+          "file": "reports/lighthouse/mobile-performance/home-font-2.json",
+          "date": "2026-09-30T10:33:27.235Z",
+          "scores": {
+            "performance": 78,
+            "accessibility": 96,
+            "best-practices": 96,
+            "seo": 100,
+            "agentic-browsing": 100
+          },
+          "metrics": {
+            "first-contentful-paint": 2556.6700499999997,
+            "largest-contentful-paint": 4886.116749999999,
+            "total-blocking-time": 49.61167500000056,
+            "cumulative-layout-shift": 0,
+            "speed-index": 2714.723649176728
+          },
+          "transferBytes": {
+            "Font": 297677,
+            "Script": 419857,
+            "Image": 35331
+          },
+          "warnings": []
+        },
+        {
+          "file": "reports/lighthouse/mobile-performance/home-font-3.json",
+          "date": "2026-09-30T10:33:38.722Z",
+          "scores": {
+            "performance": 78,
+            "accessibility": 96,
+            "best-practices": 96,
+            "seo": 100,
+            "agentic-browsing": 100
+          },
+          "metrics": {
+            "first-contentful-paint": 2557.52535,
+            "largest-contentful-paint": 4887.542249999999,
+            "total-blocking-time": 55.25422500000059,
+            "cumulative-layout-shift": 0,
+            "speed-index": 2762.200574993891
+          },
+          "transferBytes": {
+            "Font": 297677,
+            "Script": 419857,
+            "Image": 35331
+          },
+          "warnings": []
+        }
+      ],
+      "median": {
+        "score": 78,
+        "metrics": {
+          "first-contentful-paint": 2556.6700499999997,
+          "largest-contentful-paint": 4886.116749999999,
+          "total-blocking-time": 55.25422500000059,
+          "cumulative-layout-shift": 0,
+          "speed-index": 2714.723649176728
+        },
+        "transferBytes": {
+          "Font": 297677,
+          "Script": 419857,
+          "Image": 35331
+        }
+      }
+    },
+    "final": {
+      "runs": [
+        {
+          "file": "reports/lighthouse/mobile-performance/final-1.json",
+          "date": "2026-09-30T10:34:53.548Z",
+          "scores": {
+            "performance": 90,
+            "accessibility": 96,
+            "best-practices": 96,
+            "seo": 100,
+            "agentic-browsing": 100
+          },
+          "metrics": {
+            "first-contentful-paint": 1356.9329,
+            "largest-contentful-paint": 3606.9329,
+            "total-blocking-time": 83.5,
+            "cumulative-layout-shift": 0,
+            "speed-index": 2422.7120737974174
+          },
+          "transferBytes": {
+            "Font": 165333,
+            "Script": 419857,
+            "Image": 35331
+          },
+          "warnings": []
+        },
+        {
+          "file": "reports/lighthouse/mobile-performance/final-2.json",
+          "date": "2026-09-30T10:35:05.049Z",
+          "scores": {
+            "performance": 86,
+            "accessibility": 96,
+            "best-practices": 96,
+            "seo": 100,
+            "agentic-browsing": 100
+          },
+          "metrics": {
+            "first-contentful-paint": 1806.9193500000001,
+            "largest-contentful-paint": 3909.2258,
+            "total-blocking-time": 77.5,
+            "cumulative-layout-shift": 0,
+            "speed-index": 2364.4001821824554
+          },
+          "transferBytes": {
+            "Font": 165333,
+            "Script": 419857,
+            "Image": 35331
+          },
+          "warnings": []
+        },
+        {
+          "file": "reports/lighthouse/mobile-performance/final-3.json",
+          "date": "2026-09-30T10:35:16.515Z",
+          "scores": {
+            "performance": 87,
+            "accessibility": 96,
+            "best-practices": 96,
+            "seo": 100,
+            "agentic-browsing": 100
+          },
+          "metrics": {
+            "first-contentful-paint": 1654.6894499999999,
+            "largest-contentful-paint": 3906.2526,
+            "total-blocking-time": 72.5,
+            "cumulative-layout-shift": 0,
+            "speed-index": 2342.8469619640005
+          },
+          "transferBytes": {
+            "Font": 165333,
+            "Script": 419857,
+            "Image": 35331
+          },
+          "warnings": []
+        }
+      ],
+      "median": {
+        "score": 87,
+        "metrics": {
+          "first-contentful-paint": 1654.6894499999999,
+          "largest-contentful-paint": 3906.2526,
+          "total-blocking-time": 77.5,
+          "cumulative-layout-shift": 0,
+          "speed-index": 2364.4001821824554
+        },
+        "transferBytes": {
+          "Font": 165333,
+          "Script": 419857,
+          "Image": 35331
+        }
+      }
+    },
+    "optimized": {
+      "runs": [
+        {
+          "file": "reports/lighthouse/mobile-performance/optimized-1.json",
+          "date": "2026-09-30T10:37:32.186Z",
+          "scores": {
+            "performance": 90,
+            "accessibility": 96,
+            "best-practices": 96,
+            "seo": 100,
+            "agentic-browsing": 100
+          },
+          "metrics": {
+            "first-contentful-paint": 1357.7627,
+            "largest-contentful-paint": 3541.6440500000003,
+            "total-blocking-time": 54.49999999999909,
+            "cumulative-layout-shift": 0,
+            "speed-index": 2330.3616064293465
+          },
+          "transferBytes": {
+            "Font": 142376,
+            "Script": 419859,
+            "Image": 35331
+          },
+          "warnings": []
+        },
+        {
+          "file": "reports/lighthouse/mobile-performance/optimized-2.json",
+          "date": "2026-09-30T10:37:43.678Z",
+          "scores": {
+            "performance": 88,
+            "accessibility": 96,
+            "best-practices": 96,
+            "seo": 100,
+            "agentic-browsing": 100
+          },
+          "metrics": {
+            "first-contentful-paint": 1655.72685,
+            "largest-contentful-paint": 3761.4537,
+            "total-blocking-time": 72,
+            "cumulative-layout-shift": 0,
+            "speed-index": 2368.629949066589
+          },
+          "transferBytes": {
+            "Font": 142376,
+            "Script": 419859,
+            "Image": 35331
+          },
+          "warnings": []
+        },
+        {
+          "file": "reports/lighthouse/mobile-performance/optimized-3.json",
+          "date": "2026-09-30T10:37:55.105Z",
+          "scores": {
+            "performance": 87,
+            "accessibility": 96,
+            "best-practices": 96,
+            "seo": 100,
+            "agentic-browsing": 100
+          },
+          "metrics": {
+            "first-contentful-paint": 1806.4956000000002,
+            "largest-contentful-paint": 3762.9912,
+            "total-blocking-time": 74.5,
+            "cumulative-layout-shift": 0,
+            "speed-index": 2420.9235510337035
+          },
+          "transferBytes": {
+            "Font": 142376,
+            "Script": 419859,
+            "Image": 35331
+          },
+          "warnings": []
+        }
+      ],
+      "median": {
+        "score": 88,
+        "metrics": {
+          "first-contentful-paint": 1655.72685,
+          "largest-contentful-paint": 3761.4537,
+          "total-blocking-time": 72,
+          "cumulative-layout-shift": 0,
+          "speed-index": 2368.629949066589
+        },
+        "transferBytes": {
+          "Font": 142376,
+          "Script": 419859,
+          "Image": 35331
+        }
+      }
+    },
+    "verified": {
+      "runs": [
+        {
+          "file": "reports/lighthouse/mobile-performance/verified-1.json",
+          "date": "2026-09-30T10:42:30.209Z",
+          "scores": {
+            "performance": 87,
+            "accessibility": 96,
+            "best-practices": 96,
+            "seo": 100,
+            "agentic-browsing": 100
+          },
+          "metrics": {
+            "first-contentful-paint": 1657.7145,
+            "largest-contentful-paint": 3840.429,
+            "total-blocking-time": 111.5,
+            "cumulative-layout-shift": 0,
+            "speed-index": 1986.0961907115868
+          },
+          "transferBytes": {
+            "Font": 142376,
+            "Script": 442268,
+            "Image": 35331
+          },
+          "warnings": []
+        },
+        {
+          "file": "reports/lighthouse/mobile-performance/verified-2.json",
+          "date": "2026-09-30T10:42:41.724Z",
+          "scores": {
+            "performance": 87,
+            "accessibility": 96,
+            "best-practices": 96,
+            "seo": 100,
+            "agentic-browsing": 100
+          },
+          "metrics": {
+            "first-contentful-paint": 1656.34095,
+            "largest-contentful-paint": 3837.6819000000014,
+            "total-blocking-time": 87.5,
+            "cumulative-layout-shift": 0,
+            "speed-index": 2333.2268481779006
+          },
+          "transferBytes": {
+            "Font": 142376,
+            "Script": 442268,
+            "Image": 35331
+          },
+          "warnings": []
+        },
+        {
+          "file": "reports/lighthouse/mobile-performance/verified-3.json",
+          "date": "2026-09-30T10:42:53.247Z",
+          "scores": {
+            "performance": 87,
+            "accessibility": 96,
+            "best-practices": 96,
+            "seo": 100,
+            "agentic-browsing": 100
+          },
+          "metrics": {
+            "first-contentful-paint": 1656.4324499999998,
+            "largest-contentful-paint": 3837.8649000000005,
+            "total-blocking-time": 82,
+            "cumulative-layout-shift": 0,
+            "speed-index": 2399.7315187331783
+          },
+          "transferBytes": {
+            "Font": 142376,
+            "Script": 442268,
+            "Image": 35331
+          },
+          "warnings": []
+        }
+      ],
+      "median": {
+        "score": 87,
+        "metrics": {
+          "first-contentful-paint": 1656.4324499999998,
+          "largest-contentful-paint": 3837.8649000000005,
+          "total-blocking-time": 87.5,
+          "cumulative-layout-shift": 0,
+          "speed-index": 2333.2268481779006
+        },
+        "transferBytes": {
+          "Font": 142376,
+          "Script": 442268,
+          "Image": 35331
+        }
+      }
+    }
+  },
+  "lighthouseVersion": "13.5.0",
+  "mobileConfig": {
+    "output": ["html", "json"],
+    "maxWaitForFcp": 30000,
+    "maxWaitForLoad": 45000,
+    "pauseAfterFcpMs": 1000,
+    "pauseAfterLoadMs": 1000,
+    "networkQuietThresholdMs": 1000,
+    "cpuQuietThresholdMs": 1000,
+    "formFactor": "mobile",
+    "throttling": {
+      "rttMs": 150,
+      "throughputKbps": 1638.4,
+      "requestLatencyMs": 562.5,
+      "downloadThroughputKbps": 1474.5600000000002,
+      "uploadThroughputKbps": 675,
+      "cpuSlowdownMultiplier": 4
+    },
+    "throttlingMethod": "simulate",
+    "screenEmulation": {
+      "mobile": true,
+      "width": 412,
+      "height": 823,
+      "deviceScaleFactor": 1.75,
+      "disabled": false
+    },
+    "emulatedUserAgent": "Mozilla/5.0 (Linux; Android 11; moto g power (2022)) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/136.0.0.0 Mobile Safari/537.36",
+    "auditMode": false,
+    "gatherMode": false,
+    "clearStorageTypes": [
+      "file_systems",
+      "shader_cache",
+      "service_workers",
+      "cache_storage"
+    ],
+    "disableStorageReset": false,
+    "debugNavigation": false,
+    "channel": "cli",
+    "usePassiveGathering": false,
+    "disableFullPageScreenshot": false,
+    "skipAboutBlank": false,
+    "blankPage": "about:blank",
+    "ignoreStatusCode": false,
+    "locale": "en-US",
+    "blockedUrlPatterns": null,
+    "additionalTraceCategories": null,
+    "extraHeaders": null,
+    "precomputedLanternData": null,
+    "onlyAudits": null,
+    "onlyCategories": null,
+    "skipAudits": null
+  },
+  "desktop": {
+    "date": "2026-09-30T10:43:04.776Z",
+    "scores": {
+      "performance": 99,
+      "accessibility": 96,
+      "best-practices": 96,
+      "seo": 100,
+      "agentic-browsing": 100
+    },
+    "config": {
+      "output": ["html", "json"],
+      "maxWaitForFcp": 30000,
+      "maxWaitForLoad": 45000,
+      "pauseAfterFcpMs": 1000,
+      "pauseAfterLoadMs": 1000,
+      "networkQuietThresholdMs": 1000,
+      "cpuQuietThresholdMs": 1000,
+      "formFactor": "desktop",
+      "throttling": {
+        "rttMs": 40,
+        "throughputKbps": 10240,
+        "requestLatencyMs": 0,
+        "downloadThroughputKbps": 0,
+        "uploadThroughputKbps": 0,
+        "cpuSlowdownMultiplier": 1
+      },
+      "throttlingMethod": "simulate",
+      "screenEmulation": {
+        "mobile": false,
+        "width": 1350,
+        "height": 940,
+        "deviceScaleFactor": 1,
+        "disabled": false
+      },
+      "emulatedUserAgent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/136.0.0.0 Safari/537.36",
+      "auditMode": false,
+      "gatherMode": false,
+      "clearStorageTypes": [
+        "file_systems",
+        "shader_cache",
+        "service_workers",
+        "cache_storage"
+      ],
+      "disableStorageReset": false,
+      "debugNavigation": false,
+      "channel": "cli",
+      "usePassiveGathering": false,
+      "disableFullPageScreenshot": false,
+      "skipAboutBlank": false,
+      "blankPage": "about:blank",
+      "ignoreStatusCode": false,
+      "locale": "en-US",
+      "blockedUrlPatterns": null,
+      "additionalTraceCategories": null,
+      "extraHeaders": null,
+      "precomputedLanternData": null,
+      "onlyAudits": null,
+      "onlyCategories": null,
+      "skipAudits": null
+    }
+  }
+}

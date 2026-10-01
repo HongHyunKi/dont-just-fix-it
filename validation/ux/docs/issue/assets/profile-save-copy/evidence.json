@@ -1,0 +1,82 @@
+{
+  "capturedAt": "2026-10-01T05:20:18.888Z",
+  "browser": "151.0.7922.34",
+  "playwright": "1.62.1",
+  "source": "file:// local HTML; fresh context per capture; no network or CPU throttling",
+  "conditions": [
+    {
+      "state": "before",
+      "viewport": {
+        "width": 1280,
+        "height": 800
+      },
+      "sha256": "56f3b9bfcc0bd4e9085fb474e62c5699ae6a42d59babcef610038c8ef336d91e",
+      "screenshot": "before-1280.png",
+      "overflow": false
+    },
+    {
+      "state": "after",
+      "viewport": {
+        "width": 1280,
+        "height": 800
+      },
+      "sha256": "d38be6bbaed828712ff2ef035d43d9a04eece6e3495ea58409752ea99df0375e",
+      "screenshot": "after-1280.png",
+      "overflow": false
+    },
+    {
+      "state": "before",
+      "viewport": {
+        "width": 390,
+        "height": 844
+      },
+      "sha256": "56f3b9bfcc0bd4e9085fb474e62c5699ae6a42d59babcef610038c8ef336d91e",
+      "screenshot": "before-390.png",
+      "overflow": false
+    },
+    {
+      "state": "after",
+      "viewport": {
+        "width": 390,
+        "height": 844
+      },
+      "sha256": "d38be6bbaed828712ff2ef035d43d9a04eece6e3495ea58409752ea99df0375e",
+      "screenshot": "after-390.png",
+      "overflow": false
+    }
+  ],
+  "checks": [
+    {
+      "state": "before",
+      "width": 1280,
+      "buttonText": "확인",
+      "inputValue": "홍길동",
+      "tabOrder": "INPUT → BUTTON",
+      "enter": "화면 전환 및 입력값 변화 없음; 저장 로직 없음"
+    },
+    {
+      "state": "after",
+      "width": 1280,
+      "buttonText": "변경사항 저장",
+      "inputValue": "홍길동",
+      "tabOrder": "INPUT → BUTTON",
+      "enter": "화면 전환 및 입력값 변화 없음; 저장 로직 없음"
+    },
+    {
+      "state": "before",
+      "width": 390,
+      "buttonText": "확인",
+      "inputValue": "홍길동",
+      "tabOrder": "INPUT → BUTTON",
+      "enter": "화면 전환 및 입력값 변화 없음; 저장 로직 없음"
+    },
+    {
+      "state": "after",
+      "width": 390,
+      "buttonText": "변경사항 저장",
+      "inputValue": "홍길동",
+      "tabOrder": "INPUT → BUTTON",
+      "enter": "화면 전환 및 입력값 변화 없음; 저장 로직 없음"
+    }
+  ]
+}

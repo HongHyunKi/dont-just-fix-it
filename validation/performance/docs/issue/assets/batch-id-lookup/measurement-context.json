@@ -1,0 +1,16 @@
+{
+  "date": "2026-10-01",
+  "command": "PYTHONDONTWRITEBYTECODE=1 python3 benchmark.py > docs/issue/assets/batch-id-lookup/benchmark.json",
+  "cwd": "/private/tmp/djfi-validation/performance",
+  "source_sha256": {
+    "before.py": "49ea2d2bade9ba646b34dff5f800dd6df067d04e64cc75d7f1c4ad3643edff39",
+    "after.py": "803cbe84f4a3dc397cc1c5b8c5e0fe21d041288ce72b97cf98690ae903ae922f",
+    "benchmark.py": "b8eff9de5bea99f83c41b35be1d326a2525cd947b1cdc4b155482b97c91ff514"
+  },
+  "aggregation": "median of 5 runs for each condition",
+  "before_median_ms": 116.18379199999998,
+  "after_median_ms": 0.5715840000000139,
+  "reduction_pct": 99.50803464910148,
+  "speedup": 203.2663475534605,
+  "process_inspection": "ps was blocked by sandbox: operation not permitted"
+}
