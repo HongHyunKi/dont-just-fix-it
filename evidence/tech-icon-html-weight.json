@@ -1,0 +1,135 @@
+{
+  "measurement": "Local production home (next build --webpack, next start :3100), Lighthouse 13.5.0 mobile simulate, 3 sequential runs per stage",
+  "stages": {
+    "before": {
+      "runs": [
+        {
+          "run": 1,
+          "date": "2026-10-01T02:41:06.451Z",
+          "performance": 90,
+          "fcp": 1358,
+          "lcp": 3536,
+          "tbt": 33,
+          "speedIndex": 2277,
+          "cls": 0,
+          "observedLcp": 66,
+          "transferBytes": {
+            "Document": 46139,
+            "Stylesheet": 26822,
+            "Font": 142376,
+            "Script": 442278,
+            "Image": 35345
+          },
+          "techIconRequests": 0
+        },
+        {
+          "run": 2,
+          "date": "2026-10-01T02:41:17.234Z",
+          "performance": 88,
+          "fcp": 1656,
+          "lcp": 3836,
+          "tbt": 25,
+          "speedIndex": 2257,
+          "cls": 0,
+          "observedLcp": 62,
+          "transferBytes": {
+            "Document": 46139,
+            "Stylesheet": 26822,
+            "Font": 142376,
+            "Script": 442278,
+            "Image": 35331
+          },
+          "techIconRequests": 0
+        },
+        {
+          "run": 3,
+          "date": "2026-10-01T02:41:27.941Z",
+          "performance": 88,
+          "fcp": 1655,
+          "lcp": 3835,
+          "tbt": 37,
+          "speedIndex": 2331,
+          "cls": 0,
+          "observedLcp": 57,
+          "transferBytes": {
+            "Document": 46139,
+            "Stylesheet": 26822,
+            "Font": 142376,
+            "Script": 442278,
+            "Image": 35331
+          },
+          "techIconRequests": 0
+        }
+      ]
+    },
+    "icons": {
+      "runs": [
+        {
+          "run": 1,
+          "date": "2026-10-01T02:54:34.468Z",
+          "performance": 91,
+          "fcp": 1206,
+          "lcp": 3442,
+          "tbt": 18,
+          "speedIndex": 2162,
+          "cls": 0,
+          "observedLcp": 80,
+          "transferBytes": {
+            "Document": 18866,
+            "Stylesheet": 26821,
+            "Font": 142376,
+            "Script": 421890,
+            "Image": 56176
+          },
+          "techIconRequests": 16
+        },
+        {
+          "run": 2,
+          "date": "2026-10-01T02:54:45.237Z",
+          "performance": 90,
+          "fcp": 1504,
+          "lcp": 3641,
+          "tbt": 45,
+          "speedIndex": 2287,
+          "cls": 0,
+          "observedLcp": 58,
+          "transferBytes": {
+            "Document": 18866,
+            "Stylesheet": 26821,
+            "Font": 142376,
+            "Script": 421890,
+            "Image": 56176
+          },
+          "techIconRequests": 16
+        },
+        {
+          "run": 3,
+          "date": "2026-10-01T02:54:55.961Z",
+          "performance": 90,
+          "fcp": 1504,
+          "lcp": 3641,
+          "tbt": 35,
+          "speedIndex": 2097,
+          "cls": 0,
+          "observedLcp": 61,
+          "transferBytes": {
+            "Document": 18866,
+            "Stylesheet": 26821,
+            "Font": 142376,
+            "Script": 421890,
+            "Image": 56176
+          },
+          "techIconRequests": 16
+        }
+      ]
+    }
+  },
+  "settings": {
+    "rttMs": 150,
+    "throughputKbps": 1638.4,
+    "requestLatencyMs": 562.5,
+    "downloadThroughputKbps": 1474.5600000000002,
+    "uploadThroughputKbps": 675,
+    "cpuSlowdownMultiplier": 4
+  }
+}

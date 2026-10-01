@@ -1,0 +1,259 @@
+{
+  "measurement": "Local production home (next build --webpack, next start :3100), Lighthouse 13.5.0 mobile simulate, 3 sequential runs per stage",
+  "stages": {
+    "before": {
+      "runs": [
+        {
+          "run": 1,
+          "date": "2026-10-01T02:41:06.451Z",
+          "performance": 90,
+          "fcp": 1358,
+          "lcp": 3536,
+          "tbt": 33,
+          "cls": 0,
+          "observedLcp": 66,
+          "transferBytes": {
+            "Document": 46139,
+            "Stylesheet": 26822,
+            "Font": 142376,
+            "Script": 442278,
+            "Image": 35345
+          },
+          "bytesBeforeObservedLcp": {
+            "Document": 46139,
+            "Stylesheet": 26389,
+            "Font": 142376,
+            "Script": 246998,
+            "Image": 34268
+          },
+          "lcpElement": "팀과 함께 고민하며 사용자의 문제를 해결하고 비즈니스의 성장을 만드는 개발자입니다.",
+          "renderBlockingSavingsMs": 400
+        },
+        {
+          "run": 2,
+          "date": "2026-10-01T02:41:17.234Z",
+          "performance": 88,
+          "fcp": 1656,
+          "lcp": 3836,
+          "tbt": 25,
+          "cls": 0,
+          "observedLcp": 62,
+          "transferBytes": {
+            "Document": 46139,
+            "Stylesheet": 26822,
+            "Font": 142376,
+            "Script": 442278,
+            "Image": 35331
+          },
+          "bytesBeforeObservedLcp": {
+            "Document": 46139,
+            "Stylesheet": 26389,
+            "Font": 142376,
+            "Script": 246998,
+            "Image": 35331
+          },
+          "lcpElement": "팀과 함께 고민하며 사용자의 문제를 해결하고 비즈니스의 성장을 만드는 개발자입니다.",
+          "renderBlockingSavingsMs": 700
+        },
+        {
+          "run": 3,
+          "date": "2026-10-01T02:41:27.941Z",
+          "performance": 88,
+          "fcp": 1655,
+          "lcp": 3835,
+          "tbt": 37,
+          "cls": 0,
+          "observedLcp": 57,
+          "transferBytes": {
+            "Document": 46139,
+            "Stylesheet": 26822,
+            "Font": 142376,
+            "Script": 442278,
+            "Image": 35331
+          },
+          "bytesBeforeObservedLcp": {
+            "Document": 46139,
+            "Stylesheet": 26389,
+            "Font": 142376,
+            "Script": 246998,
+            "Image": 35331
+          },
+          "lcpElement": "팀과 함께 고민하며 사용자의 문제를 해결하고 비즈니스의 성장을 만드는 개발자입니다.",
+          "renderBlockingSavingsMs": 700
+        }
+      ]
+    },
+    "inline": {
+      "runs": [
+        {
+          "run": 1,
+          "date": "2026-10-01T02:41:53.095Z",
+          "performance": 89,
+          "fcp": 1358,
+          "lcp": 3766,
+          "tbt": 19,
+          "cls": 0,
+          "observedLcp": 65,
+          "transferBytes": {
+            "Document": 98303,
+            "Stylesheet": 433,
+            "Font": 142376,
+            "Script": 442278,
+            "Image": 35331
+          },
+          "bytesBeforeObservedLcp": {
+            "Document": 98303,
+            "Stylesheet": 0,
+            "Font": 142376,
+            "Script": 246998,
+            "Image": 34256
+          },
+          "lcpElement": "팀과 함께 고민하며 사용자의 문제를 해결하고 비즈니스의 성장을 만드는 개발자입니다.",
+          "renderBlockingSavingsMs": 0
+        },
+        {
+          "run": 2,
+          "date": "2026-10-01T02:42:03.838Z",
+          "performance": 89,
+          "fcp": 1354,
+          "lcp": 3759,
+          "tbt": 8,
+          "cls": 0,
+          "observedLcp": 60,
+          "transferBytes": {
+            "Document": 98303,
+            "Stylesheet": 433,
+            "Font": 142376,
+            "Script": 442278,
+            "Image": 35331
+          },
+          "bytesBeforeObservedLcp": {
+            "Document": 98303,
+            "Stylesheet": 0,
+            "Font": 142376,
+            "Script": 246998,
+            "Image": 35331
+          },
+          "lcpElement": "팀과 함께 고민하며 사용자의 문제를 해결하고 비즈니스의 성장을 만드는 개발자입니다.",
+          "renderBlockingSavingsMs": 0
+        },
+        {
+          "run": 3,
+          "date": "2026-10-01T02:42:14.597Z",
+          "performance": 88,
+          "fcp": 1353,
+          "lcp": 3835,
+          "tbt": 34,
+          "cls": 0,
+          "observedLcp": 57,
+          "transferBytes": {
+            "Document": 98303,
+            "Stylesheet": 433,
+            "Font": 142376,
+            "Script": 442278,
+            "Image": 35331
+          },
+          "bytesBeforeObservedLcp": {
+            "Document": 98303,
+            "Stylesheet": 0,
+            "Font": 142376,
+            "Script": 246998,
+            "Image": 35331
+          },
+          "lcpElement": "팀과 함께 고민하며 사용자의 문제를 해결하고 비즈니스의 성장을 만드는 개발자입니다.",
+          "renderBlockingSavingsMs": 0
+        }
+      ]
+    },
+    "nofont": {
+      "runs": [
+        {
+          "run": 1,
+          "date": "2026-10-01T02:43:23.268Z",
+          "performance": 91,
+          "fcp": 1097,
+          "lcp": 3529,
+          "tbt": 45,
+          "cls": 0,
+          "observedLcp": 57,
+          "transferBytes": {
+            "Document": 98278,
+            "Stylesheet": 433,
+            "Font": 101596,
+            "Script": 442278,
+            "Image": 35331
+          },
+          "bytesBeforeObservedLcp": {
+            "Document": 98278,
+            "Stylesheet": 0,
+            "Font": 101596,
+            "Script": 246998,
+            "Image": 34256
+          },
+          "lcpElement": "팀과 함께 고민하며 사용자의 문제를 해결하고 비즈니스의 성장을 만드는 개발자입니다.",
+          "renderBlockingSavingsMs": 0
+        },
+        {
+          "run": 2,
+          "date": "2026-10-01T02:43:33.959Z",
+          "performance": 90,
+          "fcp": 1098,
+          "lcp": 3598,
+          "tbt": 36,
+          "cls": 0,
+          "observedLcp": 51,
+          "transferBytes": {
+            "Document": 98278,
+            "Stylesheet": 433,
+            "Font": 101596,
+            "Script": 442278,
+            "Image": 35331
+          },
+          "bytesBeforeObservedLcp": {
+            "Document": 98278,
+            "Stylesheet": 0,
+            "Font": 101596,
+            "Script": 246998,
+            "Image": 35331
+          },
+          "lcpElement": "팀과 함께 고민하며 사용자의 문제를 해결하고 비즈니스의 성장을 만드는 개발자입니다.",
+          "renderBlockingSavingsMs": 0
+        },
+        {
+          "run": 3,
+          "date": "2026-10-01T02:43:44.611Z",
+          "performance": 90,
+          "fcp": 1091,
+          "lcp": 3670,
+          "tbt": 32,
+          "cls": 0,
+          "observedLcp": 51,
+          "transferBytes": {
+            "Document": 98278,
+            "Stylesheet": 433,
+            "Font": 101596,
+            "Script": 442278,
+            "Image": 35331
+          },
+          "bytesBeforeObservedLcp": {
+            "Document": 98278,
+            "Stylesheet": 0,
+            "Font": 101596,
+            "Script": 246998,
+            "Image": 35331
+          },
+          "lcpElement": "팀과 함께 고민하며 사용자의 문제를 해결하고 비즈니스의 성장을 만드는 개발자입니다.",
+          "renderBlockingSavingsMs": 0
+        }
+      ]
+    }
+  },
+  "settings": {
+    "rttMs": 150,
+    "throughputKbps": 1638.4,
+    "requestLatencyMs": 562.5,
+    "downloadThroughputKbps": 1474.5600000000002,
+    "uploadThroughputKbps": 675,
+    "cpuSlowdownMultiplier": 4
+  }
+}
