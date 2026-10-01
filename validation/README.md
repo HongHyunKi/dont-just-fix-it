@@ -69,3 +69,15 @@ Claude Code의 `disable-model-invocation: true`와 Codex의 `allow_implicit_invo
 표준 필드만 허용하는 `quick_validate.py`는 Claude Code 확장 필드인 `disable-model-invocation`을 거절합니다. 배포 파일에서 이 필드를 제거하지 않았습니다. YAML boolean 값을 별도로 검사하고, 임시 사본에서 확장 필드만 제외해 공통 필드·본문 검사를 통과시켰으며 두 호스트의 실제 인식으로 호환성을 확인했습니다. claude.ai 업로드용 패키지 호환성은 주장하지 않습니다.
 
 이 검증은 기존 자료를 문서화하는 한 상황을 수정 전후로 실행한 것입니다. Claude Code의 새 성능 측정·브라우저 캡처 수행이나 반복 성공률은 검증하지 않았습니다.
+
+## v0.2.0 — 마켓플레이스와 전역 설치
+
+스킬 본문은 v0.1.1과 동일하며 `skills/dont-just-fix-it/`로 옮겼습니다. 루트 `SKILL.md`와 `agents` 링크는 기존 경로 호환을 위해 남겼습니다. 본문을 도구별로 복제하지 않습니다.
+
+- `python3 tests/install.py`: 실제 사용자 홈 대신 임시 설치 경로에서 두 도구 자동 감지, 선택 설치, 반복 설치, 공백 포함 경로, 기존 파일·다른 링크 보존, 충돌 시 부분 설치 방지, 제거를 확인했습니다. 로컬 Git 원격으로 업데이트 확인·fast-forward 적용·로컬 변경 및 detached HEAD 보호를 검사했습니다.
+- `bash -n install.sh uninstall.sh update.sh`: 구문 검사를 통과했습니다. CLI가 없는 경우에는 설치 대상을 명시하라는 메시지와 함께 중단하는 것도 확인했습니다.
+- Claude Code 2.1.283: 별도 `CLAUDE_CONFIG_DIR`에서 로컬 마켓플레이스 등록 → 설치 → 목록·구성 확인 → 업데이트 확인 → 제거를 실제로 실행했습니다. 스킬 1개, 에이전트·훅·MCP 0개로 인식됐습니다. 사용자 본래의 플러그인 설정은 바꾸지 않았습니다.
+- 같은 플러그인을 `--plugin-dir`로 로드한 읽기 전용 호출에서 `/dont-just-fix-it:dont-just-fix-it`이 등록되고 요청 기반 동작을 설명하는 정상 응답을 확인했습니다. 실행 때마다 문서 작성까지 반복한 것은 아닙니다.
+- `claude plugin validate`로 최종 마켓플레이스를 경고 없이 검증했습니다. 플러그인 정보와 스킬 경로는 마켓플레이스 항목에 직접 선언합니다. 루트 plugin.json이 있으면 Codex의 전역 스킬 호출명까지 접두사가 붙는 문제가 발견되어 이를 제거하고, 설치 스크립트의 심볼릭 링크를 통해 Codex가 `dont-just-fix-it` 이름으로 인식하는 것을 다시 확인했습니다.
+
+스크립트는 macOS에서 실행 검증했습니다. Bash·Git·표준 파일 명령만 사용하는 Linux 호환 코드이지만 별도 Linux 머신과 Windows 네이티브 환경에서 실행하지는 않았습니다. 마켓플레이스의 설치·제거를 확인한 것과 모든 프로젝트에서 스킬 품질을 보장하는 것은 다릅니다.

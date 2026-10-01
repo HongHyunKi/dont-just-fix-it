@@ -1,0 +1,22 @@
+{
+  "name": "dont-just-fix-it",
+  "owner": {
+    "name": "Hyunki Hong"
+  },
+  "plugins": [
+    {
+      "name": "dont-just-fix-it",
+      "source": "./",
+      "description": "개선 작업을 문제·원인·해결·결과로 기록하는 스킬",
+      "version": "0.2.0",
+      "skills": [
+        "./skills/dont-just-fix-it"
+      ],
+      "author": {
+        "name": "Hyunki Hong"
+      },
+      "license": "MIT"
+    }
+  ],
+  "description": "개선 작업을 기술 사례로 남기는 dont-just-fix-it 플러그인"
+}

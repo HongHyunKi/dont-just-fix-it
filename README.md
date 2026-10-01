@@ -7,7 +7,8 @@
 | 도구 | 요청 |
 | --- | --- |
 | Codex | `$dont-just-fix-it 이번 개선을 사례로 남겨줘.` |
-| Claude Code | `/dont-just-fix-it 이번 개선을 사례로 남겨줘.` |
+| Claude Code (스크립트 설치) | `/dont-just-fix-it 이번 개선을 사례로 남겨줘.` |
+| Claude Code (마켓플레이스) | `/dont-just-fix-it:dont-just-fix-it 이번 개선을 사례로 남겨줘.` |
 
 ## 이렇게 남습니다
 
@@ -32,48 +33,45 @@ docs/issue/
 
 개발을 끝낸 뒤 대화를 다시 훑고 글을 처음부터 쓰는 부담을 줄입니다. 남긴 자료는 팀 기록, 기술 블로그, 포트폴리오에 활용할 수 있습니다.
 
-## 설치 — Codex
+## 설치 (Install)
 
-Git과 Codex가 필요합니다. **사용할 프로젝트 루트**에서 실행하세요. 같은 이름의 폴더가 이미 있으면 Git이 중단하므로 기존 설치를 덮어쓰지 않습니다.
+**Claude Code · OpenAI Codex CLI**를 지원합니다. 전체 가이드: [INSTALL.md](INSTALL.md).
 
-```sh
-mkdir -p .agents/skills
-git clone --depth 1 --branch v0.1.1 https://github.com/HongHyunKi/dont-just-fix-it.git .agents/skills/dont-just-fix-it
-```
+### Claude Code — 플러그인 마켓플레이스 (권장)
 
-Codex에서 `/skills` 또는 `$`로 `dont-just-fix-it`을 선택하세요. 목록에 없으면 Codex를 다시 시작합니다. 이 버전은 명시적으로 호출할 때만 실행하도록 설정했습니다. 설치 위치와 호출 방식은 [Codex 공식 스킬 문서](https://learn.chatgpt.com/docs/build-skills)를 따릅니다.
-
-업데이트하려면 설치 폴더에서 원하는 릴리스 태그를 가져와 전환하세요. 직접 수정한 내용이 있다면 먼저 diff를 확인하세요.
-
-```sh
-git -C .agents/skills/dont-just-fix-it fetch --tags origin
-git -C .agents/skills/dont-just-fix-it switch --detach v0.1.1
-```
-
-`v0.1.1` 자리에 업데이트할 릴리스 태그를 넣습니다. 스킬을 제거할 때는 설치한 `dont-just-fix-it` 폴더를 삭제하면 됩니다.
-
-## 설치 — Claude Code
-
-Git과 Claude Code가 필요합니다. **사용할 프로젝트 루트**에서 실행하세요.
-
-```sh
-mkdir -p .claude/skills
-git clone --depth 1 --branch v0.1.1 https://github.com/HongHyunKi/dont-just-fix-it.git .claude/skills/dont-just-fix-it
-```
-
-프로젝트에서 Claude Code를 열고 호출합니다.
+Claude Code 안에서 실행합니다. 직접 clone할 필요가 없습니다.
 
 ```text
-/dont-just-fix-it 이번 개선을 사례로 남겨줘.
+/plugin marketplace add HongHyunKi/dont-just-fix-it
+/plugin install dont-just-fix-it@dont-just-fix-it
 ```
 
-`SKILL.md`의 `disable-model-invocation: true`로 자동 선택을 막고, 사용자가 `/dont-just-fix-it`을 호출할 때 실행합니다. 설치 경로와 설정은 [Claude Code 공식 스킬 문서](https://code.claude.com/docs/en/skills)를 따릅니다. Codex는 같은 본문과 `agents/openai.yaml`의 호출 정책을 사용합니다.
+새 세션에서 호출합니다. 플러그인 설치는 이름 충돌을 피하기 위해 접두사가 붙습니다.
 
-업데이트는 위 Codex 명령의 `.agents/skills`를 `.claude/skills`로 바꿔 실행하세요. 두 도구에서 함께 사용하려면 각 설치 경로에 설치합니다. Claude Code 지원이며 claude.ai 업로드용 패키지는 아닙니다.
+```text
+/dont-just-fix-it:dont-just-fix-it 이번 개선을 사례로 남겨줘.
+```
+
+### Claude Code · Codex CLI — clone + 전역 설치
+
+터미널에서 한 번 설치하면 여러 프로젝트에서 사용할 수 있습니다.
+
+```sh
+git clone https://github.com/HongHyunKi/dont-just-fix-it.git
+cd dont-just-fix-it
+./install.sh
+```
+
+- 설치된 CLI를 감지해 Claude는 `~/.claude/skills/`, Codex는 `~/.agents/skills/`에 연결합니다.
+- 호출: Claude `/dont-just-fix-it` · Codex `$dont-just-fix-it`
+- 한쪽만 설치: `./install.sh --claude-only` / `./install.sh --codex-only`
+- 업데이트: `./update.sh` · 확인만: `./update.sh --check` · 제거: `./uninstall.sh`
+
+스크립트 설치는 macOS·Linux의 Bash 환경을 대상으로 합니다. 심볼릭 링크를 사용하므로 clone한 폴더를 유지하세요. 마켓플레이스와 스크립트 중 Claude 설치 방식은 하나를 선택하세요.
 
 ## 요청 예시
 
-아래 예시는 Codex 문법입니다. Claude Code에서는 앞의 `$dont-just-fix-it`을 `/dont-just-fix-it`으로 바꿔 호출하세요.
+아래 예시는 Codex 문법입니다. Claude Code에서는 스크립트 설치 시 `/dont-just-fix-it`, 마켓플레이스 설치 시 `/dont-just-fix-it:dont-just-fix-it`으로 바꿔 호출하세요.
 
 작업하던 대화에서 호출하면 그 맥락을 사용합니다. 새 대화에서는 변경 커밋·파일·기존 기록을 알려주세요.
 
@@ -104,7 +102,7 @@ JSON은 기존 보고서에서 추출한 기록입니다. 내부의 `reports/...
 
 프론트엔드, API, 배치, CI 등 코드 개선을 기록하는 공통 구조입니다. 필요한 근거는 분야에 따라 달라집니다. 브라우저 측정에는 별도의 브라우저 자동화 도구나 Lighthouse 등이 필요합니다.
 
-Codex와 Claude Code의 프로젝트 설치·명시적 호출을 검증했습니다. Claude Code에서는 기존 측정 자료로 사례를 작성하는 실행도 확인했습니다. 다른 에이전트는 아직 검증하지 않았습니다. 공개 사례는 Next.js 프로젝트에서 나왔으며, 릴리스 검증에서는 별도의 배치 조회·UX 문구·기존 자료 프로젝트를 사용했습니다. [검증 결과와 한계](validation/README.md)를 확인하세요.
+Codex와 Claude Code의 명시적 호출, 전역 설치 스크립트와 Claude Code 마켓플레이스 설치를 검증했습니다. Claude Code에서는 기존 측정 자료로 사례를 작성하는 실행도 확인했습니다. 다른 에이전트는 아직 검증하지 않았습니다. 공개 사례는 Next.js 프로젝트에서 나왔으며, 릴리스 검증에서는 별도의 배치 조회·UX 문구·기존 자료 프로젝트를 사용했습니다. [검증 결과와 한계](validation/README.md)를 확인하세요.
 
 ## 기여와 라이선스
 
