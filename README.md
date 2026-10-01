@@ -4,9 +4,10 @@
 
 좋은 개선을 했는데, 나중에 설명하려니 기억이 안 나나요? 이 스킬은 요청 한 번으로 작업 맥락·코드·측정 자료를 모아 **문제 → 원인 → 해결 → 결과**가 담긴 기술 사례를 작성합니다.
 
-```text
-$dont-just-fix-it 이번 개선을 사례로 남겨줘.
-```
+| 도구 | 요청 |
+| --- | --- |
+| Codex | `$dont-just-fix-it 이번 개선을 사례로 남겨줘.` |
+| Claude Code | `/dont-just-fix-it 이번 개선을 사례로 남겨줘.` |
 
 ## 이렇게 남습니다
 
@@ -37,7 +38,7 @@ Git과 Codex가 필요합니다. **사용할 프로젝트 루트**에서 실행�
 
 ```sh
 mkdir -p .agents/skills
-git clone --depth 1 --branch v0.1.0 https://github.com/HongHyunKi/dont-just-fix-it.git .agents/skills/dont-just-fix-it
+git clone --depth 1 --branch v0.1.1 https://github.com/HongHyunKi/dont-just-fix-it.git .agents/skills/dont-just-fix-it
 ```
 
 Codex에서 `/skills` 또는 `$`로 `dont-just-fix-it`을 선택하세요. 목록에 없으면 Codex를 다시 시작합니다. 이 버전은 명시적으로 호출할 때만 실행하도록 설정했습니다. 설치 위치와 호출 방식은 [Codex 공식 스킬 문서](https://learn.chatgpt.com/docs/build-skills)를 따릅니다.
@@ -46,12 +47,33 @@ Codex에서 `/skills` 또는 `$`로 `dont-just-fix-it`을 선택하세요. 목�
 
 ```sh
 git -C .agents/skills/dont-just-fix-it fetch --tags origin
-git -C .agents/skills/dont-just-fix-it switch --detach v0.1.0
+git -C .agents/skills/dont-just-fix-it switch --detach v0.1.1
 ```
 
-`v0.1.0` 자리에 업데이트할 릴리스 태그를 넣습니다. 스킬을 제거할 때는 설치한 `dont-just-fix-it` 폴더를 삭제하면 됩니다.
+`v0.1.1` 자리에 업데이트할 릴리스 태그를 넣습니다. 스킬을 제거할 때는 설치한 `dont-just-fix-it` 폴더를 삭제하면 됩니다.
+
+## 설치 — Claude Code
+
+Git과 Claude Code가 필요합니다. **사용할 프로젝트 루트**에서 실행하세요.
+
+```sh
+mkdir -p .claude/skills
+git clone --depth 1 --branch v0.1.1 https://github.com/HongHyunKi/dont-just-fix-it.git .claude/skills/dont-just-fix-it
+```
+
+프로젝트에서 Claude Code를 열고 호출합니다.
+
+```text
+/dont-just-fix-it 이번 개선을 사례로 남겨줘.
+```
+
+`SKILL.md`의 `disable-model-invocation: true`로 자동 선택을 막고, 사용자가 `/dont-just-fix-it`을 호출할 때 실행합니다. 설치 경로와 설정은 [Claude Code 공식 스킬 문서](https://code.claude.com/docs/en/skills)를 따릅니다. Codex는 같은 본문과 `agents/openai.yaml`의 호출 정책을 사용합니다.
+
+업데이트는 위 Codex 명령의 `.agents/skills`를 `.claude/skills`로 바꿔 실행하세요. 두 도구에서 함께 사용하려면 각 설치 경로에 설치합니다. Claude Code 지원이며 claude.ai 업로드용 패키지는 아닙니다.
 
 ## 요청 예시
+
+아래 예시는 Codex 문법입니다. Claude Code에서는 앞의 `$dont-just-fix-it`을 `/dont-just-fix-it`으로 바꿔 호출하세요.
 
 작업하던 대화에서 호출하면 그 맥락을 사용합니다. 새 대화에서는 변경 커밋·파일·기존 기록을 알려주세요.
 
@@ -82,7 +104,7 @@ JSON은 기존 보고서에서 추출한 기록입니다. 내부의 `reports/...
 
 프론트엔드, API, 배치, CI 등 코드 개선을 기록하는 공통 구조입니다. 필요한 근거는 분야에 따라 달라집니다. 브라우저 측정에는 별도의 브라우저 자동화 도구나 Lighthouse 등이 필요합니다.
 
-설치 안내는 Codex 기준입니다. 다른 에이전트에서는 아직 설치·호출을 검증하지 않았습니다. 공개 사례는 Next.js 프로젝트에서 나왔으며, 릴리스 검증에서는 별도의 배치 조회·UX 문구·기존 자료 프로젝트를 사용했습니다. [검증 결과와 한계](validation/README.md)를 확인하세요.
+Codex와 Claude Code의 프로젝트 설치·명시적 호출을 검증했습니다. Claude Code에서는 기존 측정 자료로 사례를 작성하는 실행도 확인했습니다. 다른 에이전트는 아직 검증하지 않았습니다. 공개 사례는 Next.js 프로젝트에서 나왔으며, 릴리스 검증에서는 별도의 배치 조회·UX 문구·기존 자료 프로젝트를 사용했습니다. [검증 결과와 한계](validation/README.md)를 확인하세요.
 
 ## 기여와 라이선스
 
