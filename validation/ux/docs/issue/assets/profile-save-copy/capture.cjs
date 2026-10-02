@@ -1,10 +1,13 @@
 const fs = require('node:fs');
 const path = require('node:path');
+const os = require('node:os');
 const crypto = require('node:crypto');
 const assert = require('node:assert/strict');
 const { chromium } = require('playwright');
 (async () => {
   const root = path.resolve(__dirname, '../../../..');
+  const output = fs.mkdtempSync(path.join(path.resolve(process.argv[2] || os.tmpdir()), 'djfi-capture-'));
+  console.log(`캡처 출력: ${output} (evidence.json이 있는 실행만 완료)`);
   const browser = await chromium.launch({ headless: true });
   const results = { capturedAt: new Date().toISOString(), browser: await browser.version(), playwright: require('playwright/package.json').version, source: 'file:// local HTML; fresh context per capture; no network or CPU throttling', conditions: [], checks: [] };
   try {
@@ -17,7 +20,7 @@ const { chromium } = require('playwright');
         const expected = state === 'before' ? '확인' : '변경사항 저장';
         assert.equal(await page.locator('button').innerText(), expected);
         assert.equal(await page.getByLabel('이름').inputValue(),'홍길동');
-        await page.screenshot({path:path.join(__dirname,`${state}-${viewport.width}.png`),fullPage:true,scale:'css'});
+        await page.screenshot({path:path.join(output,`${state}-${viewport.width}.png`),fullPage:true,scale:'css'});
         await page.keyboard.press('Tab');
         assert.equal(await page.evaluate(()=>document.activeElement.tagName),'INPUT');
         await page.keyboard.press('Tab');
@@ -31,7 +34,7 @@ const { chromium } = require('playwright');
         await context.close();
       }
     }
-    fs.writeFileSync(path.join(__dirname,'evidence.json'),JSON.stringify(results,null,2)+'\n');
+    fs.writeFileSync(path.join(output,'evidence.json'),JSON.stringify(results,null,2)+'\n');
     console.log(JSON.stringify(results,null,2));
   } finally { await browser.close(); }
 })().catch(e=>{console.error(e);process.exitCode=1});

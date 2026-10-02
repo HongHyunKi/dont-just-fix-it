@@ -27,12 +27,14 @@ cd validation/performance
 PYTHONDONTWRITEBYTECODE=1 python3 benchmark.py
 ```
 
-UX 캡처는 Node.js와 Playwright 1.62.1, 해당 Chromium이 필요합니다. 이 도구는 스킬 설치 의존성이 아니라 이 검증 입력의 재현 도구입니다. 기존 모듈을 사용한다면 `NODE_PATH`에 그 `node_modules` 디렉터리를 지정하세요. 스크립트 실행은 저장된 캡처·증거 파일을 갱신하므로 복사본에서 수행하세요.
+UX 캡처는 Node.js와 Playwright 1.62.1, 해당 Chromium이 필요합니다. 이 도구는 스킬 설치 의존성이 아니라 이 검증 입력의 재현 도구입니다. 기존 모듈을 사용한다면 `NODE_PATH`에 그 `node_modules` 디렉터리를 지정하세요. 실행마다 시스템 임시 디렉터리에 새 `djfi-capture-*` 폴더를 만들고 경로를 출력합니다. 기존 증거는 덮어쓰지 않습니다. 보존할 상위 디렉터리가 있으면 첫 번째 인자로 기존 디렉터리 경로를 전달하세요. 모든 검사가 통과한 실행에만 `evidence.json`이 생성되며, 실패한 폴더의 이미지는 미완료 자료입니다.
 
 ```sh
 cd validation/ux
 node docs/issue/assets/profile-save-copy/capture.cjs
 ```
+
+`node tests/capture.cjs`는 저장소 루트에서 브라우저 대역으로 실행별 출력 분리와 실패 시 기존 증거 보존을 검사합니다. 실제 브라우저의 화면·키보드 검증을 대신하지 않습니다. CI는 macOS·Linux에서 이 검사와 설치 테스트, Bash 구문 검사를 실행합니다.
 
 기존 자료 요청은 `validation/existing`에서 스킬을 호출해 재현할 수 있습니다. 앱 실행과 새 측정은 금지하고 문서만 별도 경로에 작성하도록 요청하세요.
 
