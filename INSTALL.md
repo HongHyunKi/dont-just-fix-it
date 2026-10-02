@@ -89,6 +89,14 @@ clone한 저장소에서 실행합니다.
 
 v0.1.x 안내로 프로젝트의 `.claude/skills/dont-just-fix-it` 또는 `.agents/skills/dont-just-fix-it`에 clone했다면, 그 폴더의 수정 내용을 먼저 확인하세요. 필요한 변경을 보관한 뒤 해당 프로젝트 설치를 제거하고 위 전역 설치를 사용하면 됩니다. 프로젝트별 설치와 전역 설치를 함께 두면 같은 이름이 중복으로 나타날 수 있습니다. 새 스크립트가 기존 프로젝트 설치를 자동 삭제하지는 않습니다.
 
+## 기록을 팀과 공유하기
+
+기본 기록 폴더 `.dont-just-fix-it/`는 `.git/info/exclude`에 등록해 로컬에서 Git 추적 대상에서 제외합니다. 공유 `.gitignore`는 수정하지 않습니다. 이미 추적 중이거나 팀 공유를 요청한 경우, 사용자 지정 경로에는 자동 제외를 적용하지 않습니다.
+
+팀과 공유하려면 `git rev-parse --git-path info/exclude`로 확인한 파일에서 `/.dont-just-fix-it/` 줄을 제거하고, 문서와 필요한 증거를 `git add`하세요. 여전히 제외된다면 `git check-ignore -v .dont-just-fix-it/<개선-사례>.md`로 다른 제외 규칙을 확인하세요.
+
+이후 스킬을 호출할 때 “팀과 공유할 기록”이라고 알려주면 제외 규칙을 다시 추가하지 않습니다. 커밋·푸시는 별도로 요청해야 합니다.
+
 ## 동작과 검증 범위
 
 스킬 본문은 두 도구가 공유합니다. Claude Code는 `disable-model-invocation: true`, Codex는 `agents/openai.yaml`의 `allow_implicit_invocation: false`로 요청 기반 호출을 유지합니다. claude.ai 업로드용 패키지나 Copilot·Gemini 지원을 주장하지 않습니다.
