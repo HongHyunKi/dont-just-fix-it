@@ -5,6 +5,7 @@ repo_dir="$(cd -- "$(dirname -- "${BASH_SOURCE[0]}")" && pwd -P)"
 skill_dir="$repo_dir/skills/dont-just-fix-it"
 install_home="${DJFI_HOME:-$HOME}"
 mode=install
+check_only=false
 target=auto
 for arg in "$@"; do
   case "$arg" in
@@ -12,9 +13,14 @@ for arg in "$@"; do
       [[ "$target" == auto ]] || { echo "설치 대상 옵션은 하나만 지정하세요." >&2; exit 1; }
       target="${arg#--}"; target="${target%-only}" ;;
     --uninstall) mode=uninstall ;;
-    *) echo "Usage: $0 [--claude-only|--codex-only] [--uninstall]" >&2; exit 1 ;;
+    --check) check_only=true ;;
+    *) echo "Usage: $0 [--claude-only|--codex-only] [--uninstall|--check]" >&2; exit 1 ;;
   esac
 done
+if [[ "$check_only" == true && "$mode" == uninstall ]]; then
+  echo "--check와 --uninstall은 함께 사용할 수 없습니다." >&2
+  exit 1
+fi
 
 destinations=()
 if [[ "$target" == claude ]] || { [[ "$target" == auto ]] && { [[ "$mode" == uninstall ]] || command -v claude >/dev/null; }; }; then
@@ -39,6 +45,11 @@ if [[ "$mode" == install ]]; then
       fi
     fi
   done
+fi
+
+if [[ "$check_only" == true ]]; then
+  echo "설치 사전 검사 통과"
+  exit 0
 fi
 
 for destination in "${destinations[@]}"; do
